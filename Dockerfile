@@ -6,4 +6,4 @@ RUN apt-get install bash nano curl php7.0-fpm php7.0-mysql php7.0-curl php7.0-gd
 RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-RUN php
+CMD ["php5-fpm"]
